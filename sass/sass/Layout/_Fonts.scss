@@ -21,14 +21,7 @@
 	font-family:"Cairo" !important;
 	// font-weight: bold;
 }
-a, span ,p{
-	font-size: 2vh;
 
-	// عرض الشاشة اكبر من الارتفاع
-	@media screen and (orientation:landscape) {
-		font-size: 1.4vw;
-	}
-}
 
 h2{
 	font-size: 4.8vh;
@@ -37,16 +30,17 @@ h2{
 	}
 }
 
-h3,
-h4{
-	font-size: 1.9vh;
+h3,h4,
+a, span ,p{
+	font-size: 2.5vh;
+	// عرض الشاشة اكبر من الارتفاع
 	@media screen and (orientation:landscape) {
-		font-size: 1.3vw;
+		font-size: 1.4vw;
 	}
 }
 p.ser-explain {
-	font-size:1.8vh;
+	font-size:2.2vh;
 	@media screen and (orientation:landscape) {
-		font-size: 1.2vw;
+		font-size: 1.35vw;
 	}
 }
