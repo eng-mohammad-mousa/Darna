@@ -1,0 +1,96 @@
+#nav{
+    // background-color: rgba($mc, .95);
+   @media screen and (max-width:991px) {
+    background-color: #161616 !important;
+   }
+    .navbar-brand{
+        position: relative;
+        display: inline-block;
+        min-width:135px;
+        min-height:65px;
+
+        // @media screen and (min-width:992px) {
+        //     min-width:130px;
+        //     height:85;
+        //   }
+
+        img{
+            width:135px;
+            min-height:55px;
+
+            transition: .3s all linear;
+            position: absolute;
+            top:5px;
+            // @media screen and (min-width:992px) {
+            //     width:130px;
+            //     height:75px;
+            //   }
+        }
+        .start{
+          @media screen and (min-width:992px) {
+            position: absolute;
+            width:400px !important;
+            height:auto !important;
+            top: $logoT992 !important;
+          }
+          @media screen and (min-width:1400px) {
+            position: absolute;
+            width:500px !important;
+            top: $logoT1400 !important;
+          }
+        }
+    }
+
+    #nav-container{
+       .navbar-nav{
+
+        @media screen and (max-width:991px) {
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+     
+        .nav-item{
+   
+            @media screen and (min-width:992px) {
+                margin-right: 30px;
+
+              }
+        }
+        a, span{
+            color:$white;
+      
+        }
+        .lang{
+            img{
+                height: 36px;
+            }
+        }
+        .contact-us-nav-item{
+            a{
+                background-color: $white;
+                border-radius: 23px;
+                padding-right: 20px;
+                padding-left: 20px;
+                color:$mc;
+
+                @media screen and (max-width:991px) {
+                    width: fit-content;
+                    margin: auto;
+                }
+
+
+                span{
+                    color:$mc;
+                }
+            }
+        }
+       }
+    }
+
+    .navbar-toggler{
+        border:0px;
+        outline: 0px;
+        box-shadow: none;
+    }
+}

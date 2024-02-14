@@ -22,3 +22,5 @@ function removeLoadingDiv(): void {
 
     }, 30);
 }
+
+// tsc --watch

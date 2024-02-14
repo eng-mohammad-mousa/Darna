@@ -1,0 +1,242 @@
+.header{
+	min-height:100vh;
+    position: relative;
+    .LBack{
+        z-index: -2;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        background-color: rgba($color: $mc, $alpha: 1);
+    }
+    > img{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        z-index: -1;
+    }
+    .content{
+        position: absolute;
+        bottom:0px;
+        left: 0px;
+        width:100%;
+        // height:calc(100vh - 80px);
+        height:100%;
+        // border:2px solid blue;
+        z-index: 0;
+        .h-content {
+            color:$white !important;
+            height:calc(100vh - 80px);
+            position: absolute;
+            bottom:0px;
+            left: 0px;
+            width:100%;
+            // border:3px solid orange;
+
+            @media screen and (max-width:991px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+
+            .elements{
+                position: absolute;
+                width: 100%;
+                
+                
+    
+
+                @media screen and (min-width:992px) {
+                    top:calc($logoT992 + 110px)
+                }
+                @media screen and (min-width:1400px) {
+                    top:calc($logoT1400 + 170px)
+                }
+
+                .container{
+                    @media screen and (max-width:991px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        flex-direction: column;
+                    }
+                }
+                a{
+                    background-color: $white;
+                    color:$mc;
+
+
+                    padding: 3px 15px 3px 8px;
+                    border-radius: 23px;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: fit-content;
+
+                
+
+
+
+                    span{
+                        color:$white;
+                        background-color: $mc;
+                        border-radius: 50%;
+                        display: inline-block;
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 22px;
+                        width:26px;
+                        height:26px;
+                        
+                    }
+                }
+            }
+
+            figure{
+           
+                width:$figureDim;
+                height: $figureDim;
+                border-radius: 50%;
+                overflow: hidden;
+
+           
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                background: radial-gradient(50% 50% at 50% 50%, rgba(153, 237, 229, 0.2) 0%, rgba(178, 241, 235, 0.159167) 25.52%, rgba(215, 246, 243, 0.0983333) 43.23%, rgba(234, 249, 247, 0.0683333) 82.29%, rgba(251, 251, 251, 0.04) 100%);
+
+         
+
+                .figure-container {
+
+
+
+                    border:2px solid #ddd3;
+
+                    width:calc($figureDim - 7.5vw);
+                    height: calc($figureDim - 7.5vw);
+
+                    border-radius: 50%;
+                    padding: 7.5vw;
+                                
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                }
+                img{
+                    width:calc($figureDim - 15vw);
+                    height: calc($figureDim - 15vw);
+                    border-radius: 50%;
+
+                    // display:none;
+                }
+            }
+            .small-screen{
+                transform: scale(1.2);
+                margin-bottom: 35px;
+                @media screen and (min-width:768px) {
+                    transform: scale(0.9);
+                    margin-bottom: 35px;
+                }
+            }
+            .large-screen{
+                position: absolute;
+                bottom:calc($figureDim / -3);
+                left:calc($figureDim / -4);
+
+            }
+        }
+    }
+}
+
+
+.services{
+    padding-top:7.5vh;
+    @media screen and (min-width:992px) {
+        padding-top:15vh;
+        
+    }
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .all-ser{
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap:5%;
+
+        .ser{
+            // border:2px solid red;
+            width:calc((100% - 5%) / 2);
+            margin-bottom: 40px;
+            @media screen and (min-width:992px) {
+                width:calc((100% - 10%) / 3);
+            }
+
+            .ser-icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 20px;
+                img{
+                    display: block;
+                   width:50px;
+                   height: 50px;
+
+                }
+            }
+            h4{
+                color:$mc;
+                font-weight: bold !important;
+            }
+            p{
+                color:$mc;
+            }
+
+        }
+    }
+}
+
+.how-to-build {
+    padding-top:4.5vh;
+    h2{
+       color:$grey;
+       font-weight: bold;
+    }
+   .w{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    figure{
+        background-color: $mc;
+        border-radius: 50%;
+
+        padding:15px;
+        width:70px;
+        height:70px;
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    h3{
+        font-weight: bold;
+        color:$mc;
+    }
+   }
+}

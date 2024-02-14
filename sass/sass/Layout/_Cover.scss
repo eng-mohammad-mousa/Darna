@@ -1,6 +1,8 @@
 body {
     position: relative;
     overflow-y: hidden;
+
+    // border:13px solid yellow
   }
   #loadingDiv {
       width: 100%;
@@ -8,7 +10,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
+      position: fixed;
       align-content: center;
       top: 0px;
       left: 0px;

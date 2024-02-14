@@ -9,6 +9,55 @@ body{
 	position: relative;
 	overflow-x:hidden;
 }
+
+
 #body{
-	overflow: hidden	;
+	min-height:100px;
+	// border:1px solid red;
+
+	direction: rtl;
+}
+
+#footer{
+	background:#000;
+	text-align: center;
+	color:white;
+	padding:10px;
+}
+#footer{
+	margin-top:1000px;
+}
+
+.container{
+	// border:1px solid red;
+	@media screen and (min-width:1800px) {
+		width:80% !important;
+		max-width: 80% !important;
+	}
+}
+
+
+.container{
+	// border:1px solid red;
+}
+.header{
+	
+    .content{
+     
+        // border:2px solid blue;
+   
+		#nav{
+			// border:2px solid green;
+		}
+
+		
+        .h-content {
+            
+            // border:3px solid orange;
+
+            .elements{
+                // border:3px solid red;
+            }
+        }
+    }
 }
