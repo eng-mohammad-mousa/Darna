@@ -5,7 +5,8 @@ html{
 	scroll-behavior: smooth;
 }
 
-// For Fire Fox 
+@media screen and (min-width:992px) {
+	// For Fire Fox 
 * , :root{	
 	scrollbar-color: $sc-color $bk-scroll;
 	scrollbar-width: thin;
@@ -32,3 +33,5 @@ html{
 	border-radius: 10px;
 	background-clip: padding-box; 
 } 
+
+}

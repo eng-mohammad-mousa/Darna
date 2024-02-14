@@ -1,0 +1,18 @@
+%btn{
+    background-color: $white;
+    color:$mc !important;
+    padding: 8px 20px;
+    border-radius: 23px;
+    transition: .3s all ease-in-out;
+
+    outline: 0px;
+    box-shadow: 0px;
+
+    &:hover{
+        transform: scale(.95);
+        span{
+            transform: rotate(-360deg);
+        }
+    }
+
+}
