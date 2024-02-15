@@ -39,7 +39,7 @@ AOS.init({
     delay: 250,
     offset: 0
 });
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel1').owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -53,6 +53,20 @@ $('.owl-carousel').owlCarousel({
         },
         768: {
             items: 8
+        }
+    }
+});
+$('.owl-carousel2').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    rtl: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            items: 1
         }
     }
 });

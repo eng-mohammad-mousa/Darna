@@ -4,9 +4,9 @@
     z-index: 10000;
 
     @media screen and (max-height:550px){
-        min-height: 150vh;
+        min-height: 130vh;
         .h-content{
-            height:calc(150vh - 80px) !important;
+            height:calc(130vh - 80px) !important;
         }
     }
         

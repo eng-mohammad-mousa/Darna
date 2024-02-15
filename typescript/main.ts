@@ -16,7 +16,6 @@ if (window.pageYOffset > 0) {
 }
 
 window.addEventListener("scroll", function() {
-
     if (window.pageYOffset > 0) {
         // Up Arrow
         arrow.style.opacity = "1";
@@ -25,7 +24,6 @@ window.addEventListener("scroll", function() {
         nav.style.backgroundColor = "#0C0C0C";
         // Logo Animation
         logo.classList.remove('start');
-
     } else {
         // Up Arrow
         arrow.style.opacity = "0";
@@ -34,18 +32,16 @@ window.addEventListener("scroll", function() {
         nav.style.backgroundColor = "#0000";
         // Logo Animation
         logo.classList.add('start');
-       
     }
-
 });
 
 $(".nav-link").on("click", function (): void {
     $("#nav-container").collapse("hide");
-  });
+});
   
-  $(window).on("scroll", function (): void {
+$(window).on("scroll", function (): void {
     $("#nav-container").collapse("hide");
-  });
+});
   
 
 // Loop over them and prevent submission
@@ -67,8 +63,7 @@ AOS.init({
     offset: 0
 })
 
-
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel1').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -86,9 +81,23 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+$('.owl-carousel2').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav:false,
+    dots:false,
+    rtl: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            items: 1
+        }
+    }
+});
+
 // Up Arrow
 arrow.addEventListener("click", function() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 });
-
 

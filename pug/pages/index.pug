@@ -38,7 +38,7 @@ block PageContent
                         p.mt-3.mt-md-5.text-center.text-lg-start 
                             | خبرات تعليمية وتدريبية موثوقة مــــن
 
-                        .owl-carousel.owl-theme
+                        .owl-carousel.owl-theme.owl-carousel1
                             -for(var x = 1 ; x <=10; x++)
                                 .item
                                     img(src=`./img/com (${x}).png`, alt="")
@@ -98,6 +98,30 @@ block PageContent
                         | بداية كبري المربع
                     p.ser-explain 
                         | اذا دوبك بادء مشروعك توكل على ربنا وحنزبطك بتشكيلة ابداعية من جميع الاقسام
+
+
+    section.works.d-none
+        div.owl-carousel.owl-theme.owl-carousel2(data-bs-ride='carousel',data-bs-pause='false',data-bs-touch='true',data-bs-keyboard='true')
+            .carousel-item(data-bs-interval='6000')
+                .container-of-slider(data-aos='zoom-in')
+                    img.carousel-img(src='./img/Rectangle24.png' alt='')
+                    .slider-text(data-aos='zoom-in')
+                        h2.carousel-header(data-aos='zoom-in')
+                            | منصة تداول إحترافية
+                        p.carousel-paragraph(data-aos='zoom-in')
+                            | ميتاتريدر 
+                            span.sc 5
+                            |  - الأولى عالمياً
+                            
+            .carousel-item(data-bs-interval='3000')
+                .container-of-slider
+                    img#two.carousel-img(src='./img/Rectangle25.png' alt='')
+                    .slider-text
+                        h2.carousel-header
+                            | تداول بأمان
+                        p.carousel-paragraph.sc
+                            | بخبرة عالية
+
 
 
     section.how-to-build 
