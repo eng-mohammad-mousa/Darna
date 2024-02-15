@@ -1,4 +1,6 @@
 #footer{
+    background-color:$mc;
+    
     .details{
         .logo{
             max-width:45%;
@@ -17,9 +19,9 @@
     }
     .form-and-links{
         form{
-            width: 90%;
+            width: 95%;
             @media screen and (min-width:768px) {
-                width: 80%;
+                width: 85%;
             }
             .input-group{
                 padding:5px;
