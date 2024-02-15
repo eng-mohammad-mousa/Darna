@@ -39,30 +39,10 @@ block PageContent
                             | خبرات تعليمية وتدريبية موثوقة مــــن
 
                         .owl-carousel.owl-theme
-                            .item
-                                h4 1
-                            .item
-                                h4 2
-                            .item
-                                h4 3
-                            .item
-                                h4 4
-                            .item
-                                h4 5
-                            .item
-                                h4 6
-                            .item
-                                h4 7
-                            .item
-                                h4 8
-                            .item
-                                h4 9
-                            .item
-                                h4 10
-                            .item
-                                h4 11
-                            .item
-                                h4 12
+                            -for(var x = 1 ; x <=10; x++)
+                                .item
+                                    img(src=`./img/com (${x}).png`, alt="")
+                            
 
                 
                 figure.d-none.d-lg-flex.large-screen(data-aos="fade-right")

@@ -50,6 +50,9 @@ $('.owl-carousel').owlCarousel({
     responsive: {
         0: {
             items: 5
+        },
+        768: {
+            items: 8
         }
     }
 });

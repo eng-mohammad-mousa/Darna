@@ -56,7 +56,9 @@
             .elements{
                 position: absolute;
                 width: 100%;
-
+               @media screen and (max-width:991px) {
+                transform: translateY(-6%);
+               }
 
                 @media screen and (min-width:992px) {
                     top:calc($logoT992 + 110px)
@@ -99,11 +101,28 @@
                     }
 
                     .owl-carousel{
-                        border:2px solid green !important;
+                        // border:2px solid green !important;
                         width:80%;
                         @media screen and (min-width:768px) {
                             width:60%;
-                            
+                        }
+                        @media screen and (min-width:992px) {
+                            width:35%;
+                        }
+                        .owl-stage{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .item{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width:40px;
+                                height: 40px;
+                                object-fit: contain;
+                            }
                         }
                     }
 
