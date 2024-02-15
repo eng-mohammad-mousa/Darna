@@ -1,5 +1,6 @@
 #footer{
     background-color:$mc;
+    color:$white;
     
     .details{
         .logo{
@@ -64,6 +65,11 @@
         a,p{
             color:$white;
             margin-bottom: 0px;
+        }
+        a{
+            padding-bottom: 10px;
+            
+            @extend %hvr-underline-from-center;
         }
     }
 }

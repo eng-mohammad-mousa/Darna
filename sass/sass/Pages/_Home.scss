@@ -2,6 +2,15 @@
 	min-height:100vh;
     position: relative;
     z-index: 10000;
+
+    @media screen and (max-height:550px){
+        min-height: 150vh;
+        .h-content{
+            height:calc(150vh - 80px) !important;
+        }
+    }
+        
+    
     .LBack{
         z-index: -2;
         position: absolute;
@@ -64,29 +73,41 @@
                         align-content: center;
                         flex-direction: column;
                     }
-                }
-                a{
-                    @extend %btn;
+                
+                    a{
+                        @extend %btn;
 
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: fit-content;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: fit-content;
 
 
-                    span{
-                        color:$white;
-                        background-color: $mc;
-                        border-radius: 50%;
-                        display: inline-block;
-                        font-weight: bold;
-                        text-align: center;
-                        line-height: 22px;
-                        width:26px;
-                        height:26px;
-                        transition: .3s all linear;
-                        
+                        span{
+                            color:$white;
+                            background-color: $mc;
+                            border-radius: 50%;
+                            display: inline-block;
+                            font-weight: bold;
+                            text-align: center;
+                            line-height: 22px;
+                            width:26px;
+                            height:26px;
+                            transition: .3s all linear;
+                            
+                        }
                     }
+
+                    .owl-carousel{
+                        border:2px solid green !important;
+                        width:80%;
+                        @media screen and (min-width:768px) {
+                            width:60%;
+                            
+                        }
+                    }
+
+                    
                 }
             }
 

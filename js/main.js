@@ -18,19 +18,41 @@ window.addEventListener("scroll", function () {
         logo.classList.add('start');
     }
 });
-(function () {
-    'use strict';
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        }, false);
-    });
-})();
+$(".nav-link").on("click", function () {
+    $("#nav-container").collapse("hide");
+});
+$(window).on("scroll", function () {
+    $("#nav-container").collapse("hide");
+});
+Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }, false);
+});
+AOS.init({
+    duration: 1000,
+    delay: 250,
+    offset: 0
+});
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    rtl: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            items: 5
+        }
+    }
+});
 arrow.addEventListener("click", function () {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 });

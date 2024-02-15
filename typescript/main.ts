@@ -1,3 +1,6 @@
+declare var $:any;
+declare var AOS:any;
+
 let 
     arrow = document.getElementById('up-arrow') as HTMLElement,
     logo = document.getElementById('logo') as HTMLImageElement,
@@ -13,7 +16,7 @@ if (window.pageYOffset > 0) {
 }
 
 window.addEventListener("scroll", function() {
-    
+
     if (window.pageYOffset > 0) {
         // Up Arrow
         arrow.style.opacity = "1";
@@ -33,27 +36,56 @@ window.addEventListener("scroll", function() {
         logo.classList.add('start');
        
     }
+
 });
 
+$(".nav-link").on("click", function (): void {
+    $("#nav-container").collapse("hide");
+  });
+  
+  $(window).on("scroll", function (): void {
+    $("#nav-container").collapse("hide");
+  });
+  
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event:any) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+.forEach(function (form) {
+    form.addEventListener('submit', function (event:any) {
+    if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+    }, false)
+})
+
+AOS.init({
+    duration: 1000,
+    delay: 250,
+    offset: 0
+})
+
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    rtl: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive:{
+        0:{
+            items:5
         }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
+    }
+})
 
 // Up Arrow
 arrow.addEventListener("click", function() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 });
+
+
