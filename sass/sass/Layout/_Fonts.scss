@@ -24,7 +24,8 @@
 
 
 h2{
-	font-size: 4.8vh;
+	// font-size: 4.8vh;
+	font-size: 1.8rem;
 	@media screen and (orientation:landscape) {
 		font-size:3.8vw;
 	}
@@ -32,14 +33,16 @@ h2{
 
 h3,h4,
 a, span ,p{
-	font-size: 2.5vh;
+	// font-size: 2.5vh;
+	font-size: 1.1rem;
 	// عرض الشاشة اكبر من الارتفاع
 	@media screen and (orientation:landscape) {
 		font-size: 1.4vw;
 	}
 }
 p.ser-explain {
-	font-size:2.2vh;
+	// font-size:2.2vh;
+	font-size: 1rem;
 	@media screen and (orientation:landscape) {
 		font-size: 1.35vw;
 	}

@@ -1,6 +1,7 @@
 .header{
 	min-height:100vh;
     position: relative;
+    z-index: 10000;
     .LBack{
         z-index: -2;
         position: absolute;
@@ -259,35 +260,76 @@
 }
 
 .customers{
-    padding-top: $sectionPT;
+    padding-top: calc($sectionPT * 1.5);
     h2{
         font-weight: bold;
     }
     figure{
         width:100%;
-        position: relative;
-        &:after{
-            content: "";
-            width:100%;
-            height: 100%;
-            top:0px;
-            left: 0px;
-            position: absolute;
-            background: 
-            linear-gradient(
-                2.98deg,
-                #FFFFFF 9.16%, 
-                rgba(255, 255, 255, 0) 19.84%,
-                rgba(239, 239, 239, 0) 30.53%,
-                rgba(255, 255, 255, 0) 41.21%)
-            ;
+        // position: relative;
+        // &:after{
+        //     content: "";
+        //     width:100%;
+        //     height: 100%;
+        //     top:0px;
+        //     left: 0px;
+        //     position: absolute;
+        //     background: 
+        //     linear-gradient(
+        //         2.98deg,
+        //         #FFFFFF 9.16%, 
+        //         rgba(255, 255, 255, 0) 19.84%,
+        //         rgba(239, 239, 239, 0) 30.53%,
+        //         rgba(255, 255, 255, 0) 41.21%)
+        //     ;
 
-        }
+        // }
 
         img{
             width:100%;
-            filter: grayscale(1);
-            opacity: .6;
+            filter: grayscale(0.75);
+            opacity: .75;
+        }
+    }
+}
+
+.whatsapp-icon {
+    padding-top: calc($sectionPT * 1.5);
+    padding-bottom: calc($sectionPT * 1.5);
+
+    .container {
+        background-color: $mc;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .row{
+            > *{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+               
+            }
+            .txt{
+                h2{
+                    font-weight: bold;
+                }
+                h2,p{
+                    color:$white;
+                }
+            }
+            .img-container{
+                display: flex;
+                align-items: flex-end;
+                @extend %hvr-wobble-skew;
+                img{
+                    width: 100%;
+                    transform: scale(1.5);
+                    height: auto;
+                }
+            }
         }
     }
 }

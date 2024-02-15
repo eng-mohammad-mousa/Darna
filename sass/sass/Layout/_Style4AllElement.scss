@@ -13,6 +13,11 @@ a{
     flex-grow:initial;
 }
 
+#body > section{
+    position: relative;
+    z-index: 0;
+}
+
 // .splide {
 //     color:white;
 //     li{
