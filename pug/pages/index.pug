@@ -100,27 +100,42 @@ block PageContent
                         | اذا دوبك بادء مشروعك توكل على ربنا وحنزبطك بتشكيلة ابداعية من جميع الاقسام
 
 
-    section.works.d-none
-        div.owl-carousel.owl-theme.owl-carousel2(data-bs-ride='carousel',data-bs-pause='false',data-bs-touch='true',data-bs-keyboard='true')
-            .carousel-item(data-bs-interval='6000')
-                .container-of-slider(data-aos='zoom-in')
-                    img.carousel-img(src='./img/Rectangle24.png' alt='')
-                    .slider-text(data-aos='zoom-in')
-                        h2.carousel-header(data-aos='zoom-in')
-                            | منصة تداول إحترافية
-                        p.carousel-paragraph(data-aos='zoom-in')
-                            | ميتاتريدر 
-                            span.sc 5
-                            |  - الأولى عالمياً
-                            
-            .carousel-item(data-bs-interval='3000')
-                .container-of-slider
-                    img#two.carousel-img(src='./img/Rectangle25.png' alt='')
-                    .slider-text
-                        h2.carousel-header
-                            | تداول بأمان
-                        p.carousel-paragraph.sc
-                            | بخبرة عالية
+    section.works
+        .container(data-aos="zoom-in")
+            .owl-carousel.owl-theme.owl-carousel2(data-bs-ride='carousel',data-bs-pause='false',data-bs-touch='true',data-bs-keyboard='true')
+                .item(data-bs-interval='6000')
+                    .container-of-slider.row
+                        
+                        .slider-text.col-12.col-lg-8.text-center.text-lg-start
+                            h3.carousel-title
+                                | بتوفيق ربنــــا 🤲
+                            h4.carousel-header
+                                span.number.d-block.fw-bold
+                                    | 500+ 
+                                span.title.fw-bold
+                                    |  طفل بالسرطان تم علاجه
+                            p.desc 
+                                | فزعتنا بتدشين محراب وخبرتنا في التسويق والتصميم ساهمنا (بفضل الله) باستمرار رحلة عدد كبير من الأطفال المصابين بالسرطان وتعزيز ثقة الجمعية بالجهات المانحة تسويقيًا ورفع سمعتها بالمجتمع.
+                        
+                        figure.col-12.col-lg-4.mt-3.mt-lg-0
+                            img.carousel-img(src='./img/Rectangle24.png' alt='')
+                                
+                .item(data-bs-interval='3000')
+                    .container-of-slider.row
+
+                        .slider-text.col-12.col-lg-8.text-center.text-lg-start
+                            h3.carousel-title
+                                | بتوفيق ربنــــا 🤲
+                            h4.carousel-header
+                                span.number.d-block.fw-bold
+                                    | 900+
+                                span.title.fw-bold
+                                    |  محارب للتأتأة تم تدريبه
+                            p.desc 
+                                | فزعتنا بتصميم وكتابة محتوى الكتيبات التعريفية والتسويقية وتوفير الجلسات الاستشارية عززت من قوة البرامج بصريًا وتسويقيًا ودعم المتأتئين للتحكم في التأتأة من نواحي عديدة مما ادى الى تحسين جودة حياتهم
+
+                        figure.col-12.col-lg-4.mt-3.mt-lg-0
+                            img.carousel-img(src='./img/Rectangle25.png' alt='')
 
 
 
@@ -151,7 +166,6 @@ block PageContent
         figure.mt-3(data-aos="fade-up") 
             img(src="./img/our-customers.png", alt="")
 
-    
     section.whatsapp-icon 
         .container.py-3(data-aos="flip-up")
             .row.w-100.px-1.px-md-4

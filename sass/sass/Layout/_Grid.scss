@@ -28,7 +28,7 @@ body{
 
 
 .container{
-	border:1px solid red;
+	// border:1px solid red;
 }
 .header{
 	
@@ -50,4 +50,13 @@ body{
             }
         }
     }
+}
+
+.works{
+    // border:3px solid blue;
+    .item{
+        figure{
+            // border:5px solid green;
+		}
+	}
 }

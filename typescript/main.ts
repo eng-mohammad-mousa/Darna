@@ -82,16 +82,16 @@ $('.owl-carousel1').owlCarousel({
 })
 
 $('.owl-carousel2').owlCarousel({
-    loop: true,
-    margin: 10,
+    loop:true,
+    margin:30,
     nav:false,
-    dots:false,
+    dots:true,
     rtl: true,
     autoplay: true,
-    autoplayTimeout: 3000,
-    responsive: {
-        0: {
-            items: 1
+    autoplayTimeout: 5000,
+    responsive:{
+        0:{
+            items:1
         }
     }
 });
