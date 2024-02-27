@@ -56,10 +56,22 @@
             a{
                 color:$white;
                 padding-bottom: 10px;
-
                 @extend %hvr-underline-from-center;
             }
         }
+        .mhrab a{
+            pointer-events: none;
+            position: relative;
+            .soon{
+                position: absolute;
+                top: -20px;
+                right: -65%;
+                color: #fff;
+                display: inline-block;
+                transform: scale(.8);
+            }
+        }
+      
     }
     .second-row {
         a,p{
