@@ -81,20 +81,24 @@ $('.owl-carousel1').owlCarousel({
     }
 })
 
-$('.owl-carousel2').owlCarousel({
-    loop:true,
-    margin:30,
-    nav:false,
-    dots:true,
-    rtl: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    responsive:{
-        0:{
-            items:1
-        }
-    }
-});
+
+
+// $('.owl-carousel2').owlCarousel({
+//     loop:true,
+//     margin:30,
+//     nav:false,
+//     dots:true,
+//     rtl: true,
+//     autoplay: true,
+//     autoplayTimeout: 5000,
+//     responsive:{
+//         0:{
+//             items:1
+//         }
+//     }
+// });
+
+
 
 // Up Arrow
 arrow.addEventListener("click", function() {

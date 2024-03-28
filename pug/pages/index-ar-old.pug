@@ -97,95 +97,74 @@ block PageContent
                     p.ser-explain 
                         | تشكيلة ابداعية من جميع الاقسام تساعدك تكمل مشروعك
 
-    section.works.works1
+    section.works
         .container(data-aos="zoom-in")
-            .owl-theme(data-bs-ride='carousel',data-bs-pause='false',data-bs-touch='true',data-bs-keyboard='true')
+            .owl-carousel.owl-theme.owl-carousel2(data-bs-ride='carousel',data-bs-pause='false',data-bs-touch='true',data-bs-keyboard='true')
                 .item(data-bs-interval='12000')
-                    .container-of-slider.row.align-items-center
+                    .container-of-slider.row
                         
-                        .slider-text.col-12.col-lg-7.text-center.text-lg-start
-                        
+                        .slider-text.col-12.col-lg-8.text-center.text-lg-start
+                            h3.carousel-title
+                                | بتوفيق ربنــــا 🤲
                             h4.carousel-header
                                 span.number.d-block.fw-bold
-                                    | التسويق المجتمعي 
-                                
-                            p.desc.fw-bold.mt-5.pe-lg-5
-                                |  التسويق للقطاع الخيري ساهم بتنمية الموارد المالية للقطاع واستدامة أثره على المجتمع!
+                                    | 500+ 
+                                span.title.fw-bold
+                                    |  طفل بالسرطان تم علاجه
+                            p.desc 
+                                | فزعتنا بتدشين محراب وخبرتنا في التسويق والتصميم ساهمنا (بفضل الله) باستمرار رحلة عدد كبير من الأطفال المصابين بالسرطان وتعزيز ثقة الجمعية بالجهات المانحة تسويقيًا ورفع سمعتها بالمجتمع.
                         
-                        figure.col-12.col-lg-5.mt-3.mt-lg-0
+                        figure.col-12.col-lg-4.mt-3.mt-lg-0
                             img.carousel-img(src='./img/Rectangle24.png' alt='')
                                 
-    section.works.works2
-        .container(data-aos="zoom-in")
-            .owl-theme(data-bs-ride='carousel',data-bs-pause='false',data-bs-touch='true',data-bs-keyboard='true')
-                .item(data-bs-interval='12000')
-                    .container-of-slider.row.align-items-center.flex-column-reverse.flex-lg-row
-                        
-                        
-                        
-                        figure.col-12.col-lg-7.mt-3.mt-lg-0.px-5
-                            img.carousel-img(src='./img/Frame 146.png' alt='')
+                .item(data-bs-interval='3000')
+                    .container-of-slider.row
 
-                        .slider-text.col-12.col-lg-5.text-center.text-lg-start
-                        
+                        .slider-text.col-12.col-lg-8.text-center.text-lg-start
+                            h3.carousel-title
+                                | بتوفيق ربنــــا 🤲
                             h4.carousel-header
                                 span.number.d-block.fw-bold
-                                    | التسويق الالكتروني 
-                                
-                            p.desc.fw-bold.mt-5.pe-lg-5
-                                |  دخولك للعالم الرقمي يساهم بوصول مستفيديك لمنتجاتك وخدماتك المميزة لتيسير احتياجاتهم!
-                                
+                                    | 900+
+                                span.title.fw-bold
+                                    |  محارب للتأتأة تم تدريبه
+                            p.desc 
+                                |  فزعتنا بتصميم وكتابة محتوى الكتيبات التعريفية والتسويقية وتوفير الجلسات الاستشارية عززت من قوة البرامج بصريًا وتسويقيًا ودعم المتأتئين للتحكم في التأتأة من نواحي عديدة مما ادى الى تحسين جودة حياتهم  
 
+                        figure.col-12.col-lg-4.mt-3.mt-lg-0
+                            img.carousel-img(src='./img/Rectangle25.png' alt='')
+
+    section.how-to-build
+        .container 
+
+            h2.text-center(data-aos="zoom-in")  
+                | كيف يتكون مشروعك
+            
+            .ways.d-flex.justify-content-between.justify-content-lg-evenly.mt-3.pt-3.mt-lg-5.pt-lg-3
+                .w(data-aos="fade-up") 
+                    figure 
+                        img(src="./icon/w (1).png", alt="")
+                    h3 نفكر
+                .w(data-aos="fade-up") 
+                    figure 
+                        img(src="./icon/w (2).png", alt="")
+                    h3 نحضر
+                .w(data-aos="fade-up") 
+                    figure 
+                        img(src="./icon/w (3).png", alt="")
+                    h3 نبدع
 
     section.customers
         h2.text-center(data-aos="zoom-in")  
             | سُكان دارنـــــا
-        .img-container 
-            .container.py-5
-                .row 
-                    .col-3 
-                        img(src='./img/Frame 1000003565.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003562.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003563.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003564.png')
-                .row.justify-content-center
-                    .col-3 
-                        img(src='./img/Frame 1000003567.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003566.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003568.png')
-                .row 
-                    .col-3 
-                        img(src='./img/Frame 1000003570.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003569.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003571.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003572.png')
-                .row.justify-content-center
-                    .col-3 
-                        img(src='./img/Frame 1000003574.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003573.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003575.png')
-                .row.justify-content-center
-                    .col-3 
-                        img(src='./img/Frame 1000003576.png')
-                    .col-3 
-                        img(src='./img/Frame 1000003577.png')
-
+        figure.mt-3(data-aos="fade-up") 
+            img(src="./img/our-customers.png", alt="")
 
     section.whatsapp-icon.px-2.px-lg-0(data-aos="flip-up")
         a.d-block.container.py-3(href="https://wa.me/966500095203")
             .row.w-100.px-1.px-md-4
                 .col-9.txt.ps-md-5
-                    h2.header-for-contact-us  تواصل ونحلهـــا لك 👈
+                    h2.header-for-contact-us  نحلهـــا لك 👈
                     p *تطبق  الشروط والأحكام 😅
 
                 span.col-3.img-container.pe-md-5

@@ -65,12 +65,12 @@ footer button {
     .item{
         .carousel-header{
             .number{
-                font-size: 4.5rem;
+                font-size: 3rem;
 				@media screen and (orientation:landscape) {
 					font-size:6.5vw;
 				}
             }
-			.title{
+			.desc{
 				font-size: 1.6rem;
 				@media screen and (orientation:landscape) {
 					font-size:3.5vw;
